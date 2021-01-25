@@ -1,0 +1,341 @@
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*::selection {
+    background: #171616;
+    color: #fff;
+}
+
+/* T: PROPIEDADES POR DEFECTO */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+.contenedor {
+    /* background: #000; */
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.titulo {
+    font-size: 2rem;
+    font-weight: 300;
+    text-align: center;
+    margin: 0px 0px 25px 0px;
+}
+
+
+/* T: HEADER */
+
+header {
+    background:
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./../img/fondo.jpg') #000;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+}
+
+header .contenedor {
+    padding: 0;
+}
+
+header nav {
+    margin-top: 30px;
+    text-align: right;
+}
+
+header nav a {
+    color: rgba(255, 255, 255, 0.6);
+    margin-right: 20px;
+    font-size: 1.05rem;
+    text-decoration: none;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+}
+
+header nav a:hover {
+    border-bottom: 2px solid #fff;
+    color: #fff;
+    transition: .2s ease-in;
+}
+
+header .cuadro-texto {
+    margin: 170px 0 190px 0;
+    color: #fff;
+    text-align: center;
+}
+
+header .cuadro-texto .texto {
+    display: inline-block;
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    border-radius: 5px;
+    padding: 45px 25px;
+    position: relative;
+}
+
+header .cuadro-texto .texto:hover {
+    border: 2px solid #fff;
+    transition: .2s ease-in;
+}
+
+header .cuadro-texto .texto .nombre { font-size: 2rem; font-weight: 100; margin: 0 0 5px 0 ; }
+header .cuadro-texto .texto .profesion { font-size: 1.1rem; font-weight: 300;; margin:0; }
+header .cuadro-texto .texto .pais {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin: 0 0 8px 8px;
+    font-weight: 100;
+}
+header .cuadro-texto .texto .color1 { color: #2be264;}
+header .cuadro-texto .texto .color2 { color: #ed4141; }
+
+/* T: ACERCA DE */
+
+.principales .acerca-de .contenedor {
+    margin-top: -60px;
+}
+
+.principales .acerca-de .imagen {
+    background: url('./../img/Howa.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 125px;
+    height: 125px;
+    margin: -60px auto 0 auto;
+    border: 6px solid rgba(237, 65, 65, 0.7);
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.principales .acerca-de .titulo {
+    color: #3a89c3;
+}
+
+.principales .acerca-de .descripcion p {
+    line-height: 1.7;
+    font-size: 1.1rem;
+    font-weight: 300;
+    text-align: center;
+}
+
+.principales .acerca-de .descripcion .subrayado {
+    text-decoration: underline;
+    color: #3a89c3;
+}
+
+/* T: SECCIÓN DE TRABAJOS */
+
+.principales .trabajos {
+    background: rgba(231, 231, 231, 1);
+}
+
+.principales .trabajos .contenedor {
+    padding-bottom: 25px;
+}
+
+.principales .trabajos .contenedor-trabajos{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+
+.principales .trabajos .contenedor-trabajos .trabajo {
+    width: 24%;
+    margin-bottom: 35px;
+}
+
+.principales .trabajos .contenedor-trabajos .trabajo .imagen-trabajo {
+    width: 100%;
+}
+
+.principales .trabajos .contenedor-trabajos .trabajo .imagen-trabajo img {
+    width: 100%;
+    border-radius: 5px;
+    vertical-align: top;
+}
+
+.principales .trabajos .contenedor-trabajos .trabajo .imagen-trabajo img:hover {
+    filter: brightness(40%);
+}
+
+.principales .trabajos .contenedor-trabajos .trabajo .texto {
+    text-align: center;
+}
+
+.principales .trabajos .contenedor-trabajos .trabajo .texto .nombre {
+    font-size: 1rem;
+    color: #3a89c3;
+    font-weight: bold;
+}
+
+.principales .trabajos .contenedor-trabajos .trabajo .texto .categoria {
+    color: #454545;
+}
+
+/* T: CONTACTO */
+
+form {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+
+input[type=text],
+input[type=email] {
+    width: 49.5%;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+    padding: 15px 20px;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid rgba(102, 102, 107, 0.3);
+    margin-bottom: 15px;
+}
+
+input[type=text]:focus,
+input[type=email]:focus {
+    border: 2px solid rgba(68, 98, 230, 0.67);
+    transition: .2s ease-in;
+}
+
+textarea:focus {
+    border: 2px solid rgba(68, 98, 230, 0.67);
+    transition: 0s;
+}
+
+textarea {
+    width: 100%;
+    min-height: 150px;
+    max-height: 350px;
+    min-width: 100%;
+    transition: .0001s linear;
+}
+
+input[type=submit] {
+    border: 0;
+    margin: auto;
+    background: #3a89c3;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+input[type=submit]:hover {
+    color: #3a89c3;
+    background: #fff;
+    border: 2px solid;
+    font-weight: 400;
+}
+
+/* T: REDES SOCIALES */
+
+footer .redes-sociales{
+    background: #1d1a1d;
+    color: #fff;
+    padding: 80px 0;
+    font-size: 2rem;
+}
+
+footer .redes-sociales .contenedor {
+    display: flex;
+    justify-content: center;
+}
+
+footer .redes-sociales a {
+    /* background: #fff; */
+    display: inline-block;
+    padding: 25px 65px;
+    color: white;
+}
+
+footer .redes-sociales .youtube:hover { background: #ff0000; }
+footer .redes-sociales .linkedin:hover { background: #0077b5; }
+footer .redes-sociales .facebook:hover { background: #3b5998; }
+
+@media screen and (max-width:1070px) {
+    header nav {
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width:920px) {
+    body {
+        font-size: 16px ;
+    }
+
+    .principales .trabajos .contenedor-trabajos .trabajo {
+        width: 32%;
+    }
+
+    header .cuadro-texto .texto .nombre{
+        font-size: 2rem;
+    }
+
+    header .cuadro-texto .texto .profesion {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .principales .trabajos .contenedor-trabajos .trabajo {
+        width: 48%;
+    }
+
+    footer .redes-sociales .contenedor {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    footer .redes-sociales a {
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin: 0 50%;
+    }
+}
+
+@media screen and (max-width:450px) {
+
+    .principales .trabajos .contenedor-trabajos .trabajo {
+        width: 100%;
+    }
+
+    header .cuadro-texto .texto .profesion {
+        font-size: 1rem;
+    }
+
+    form {
+        flex-direction: column;
+    }
+
+    input[type=text],
+    input[type=email],
+    textarea {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* End */

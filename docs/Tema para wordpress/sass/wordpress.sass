@@ -1,0 +1,58 @@
+$colorFondo: #fff
+// 2D3047, 082145, 0e0e0e,181A1B
+$colorPrimario: #4381C1
+$colorSecundario: #fff
+$colorTercero: #000
+$colorCuarto: #5fa3db
+$colorQuinto: #000
+$rgbaTexto: rgba(0, 0, 0, 0.5)
+$rgbaTexto2: rgba(0, 0, 0, 0.7)
+
+// Enlaces
+$colorEnlaceOff: rgba(255, 255, 255, 0.6)
+$colorEnlacesOn: #fff
+
+// Tipografía
+$fuentePrimaria: 'Poppins'
+$fuenteSecundaria: 'Roboto Condensed'
+$tamanoFuente: 16px
+
+* 
+    padding: 0
+    margin: 0
+    &::selection
+        background: $rgbaTexto2
+        color: #fff
+   
+body
+    background: $colorFondo
+    font-family: $fuentePrimaria
+    font-size: $tamanoFuente
+    // opacity: .9
+    color: $colorSecundario
+
+a 
+    text-decoration: none
+
+.bloqueAnuncio
+    margin: 2rem auto 1.5rem auto
+    text-align: center
+    width: 100%
+    img
+        width: 100%
+        vertical-align: top
+
+.tituloSeccion 
+    color: $colorTercero
+    font-family: $fuenteSecundaria
+    font-size: 2rem
+    font-weight: lighter
+    padding-bottom: 1rem  
+    border-bottom: 3px solid $colorCuarto
+
+
+@import header
+@import articulos
+@import laterales
+@import footer
+@import mediaqueries

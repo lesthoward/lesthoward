@@ -1,0 +1,59 @@
+aside 
+    .lateral
+        margin-bottom: 2rem
+        .contenidoLateral
+            margin-top: 2rem
+        .redesSociales
+            display: flex
+            a
+                color: $colorSecundario
+                width: 100%
+                text-align: center
+                display: inline-block
+                padding: 2rem 0  
+                &.linkedin
+                        background: #0077b5
+                &.github
+                    background: #333
+                &.youtube
+                    background: #ff0000
+                i
+                    font-size: 1.5rem
+                    display: block
+                span
+                    font-weight: 300
+                &:hover
+                    opacity: .7
+    form
+        background: $colorSecundario
+        color: $colorTercero
+        text-align: center
+        padding: 1.25rem
+        border-radius: .2rem
+        label
+            font-size: 1.25rem
+        input[type="email"]
+            padding: 1.5rem
+            width: 100%
+            border: none
+            outline: none
+            border: 2px solid rgba(0, 0, 0, .2)
+            border-radius: .3rem
+            font-size: .9rem
+            font-family: $fuentePrimaria
+            margin: 1rem 0
+            &:focus
+                border: 2px solid #000
+
+        input[type="submit"]
+            background: $colorCuarto
+            color: $colorSecundario
+            padding: 1.1rem
+            border: none
+            outline: none
+            border-radius: .2rem
+            border-radius: 50px
+            cursor: pointer
+            // font-weight: bold
+            &:hover
+                background: $colorTercero

@@ -1,0 +1,388 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+*::selection {
+    color: #fff;
+    background: #000;
+}
+
+body {
+    font-family:  'Source Sans Pro',arial,san-serif;
+    font-size: 16px;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+header {
+    background: url('./img/bg.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+}
+
+header .contenedor {
+    height: 700px;
+    position: relative; 
+}
+
+header nav {
+    text-align: right;
+}
+
+header nav a {
+    margin: 30px 20px 0 0;
+    color: #fff;
+    font-size: 1.43rem;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 300;
+    padding-bottom: 2px;
+    border-bottom: 1px solid transparent;
+    position: relative;
+}
+
+header nav a:hover {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+    transition: all .1s ease-in;
+}
+
+header nav a:last-child {
+    margin-right: 0;
+}
+
+header .texto {
+    position: absolute;
+    top: 37%;
+    color: #fff;
+}
+
+header .texto .titulo {
+    font-size: 3.8rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+header .texto .titulo span {
+    font-weight: 200;
+}
+
+header .texto .descripcion {
+    margin: 0;
+    font-size: 1.75rem;
+    font-weight: 300;
+    font-style: italic;
+}
+
+/* PRINCIPALES */
+
+.principales {
+    background: url('./img/bg-textura.png');
+    background-repeat: repeat;
+}
+
+.acercaDe  {
+    width: 100%;
+    position: relative;
+}
+
+.acercaDe .contenedor {
+    position: relative;
+}
+
+.acercaDe .fotoLugar {
+    width: 80%;
+    position: absolute;
+    top: -50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    z-index: 1;
+}
+
+.acercaDe .fotoLugar img {
+    width: 100%;
+    vertical-align: top;
+    
+}
+.acercaDe article {
+    width: 40%;
+    background: #fff;
+    padding: 25px;
+    position: relative;
+    z-index: 2;
+    float: right;
+    right: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    top: 300px;
+    /* visibility: hidden; */
+}
+
+
+.acercaDe article .titulo {
+    text-align: center;
+    font-size: 2rem;
+    line-height: 2;
+}
+
+.acercaDe article p {
+    line-height: 2;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.platillos {
+    clear: both;
+}
+
+.contenedor > .titulo {
+    text-align: center;
+    font-size: 2.8rem;
+    margin-bottom: 40px;
+    font-weight: normal;
+}
+
+.contenedorMenus, 
+.contenedorMenus2 {
+    border: 2px solid #000;
+    overflow: hidden;
+    
+}
+
+.contenedorMenus {
+    padding: 15px; 
+    margin-bottom: 100px;
+}
+
+.contenedorMenus2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.contenedorMenus article {
+    width: 45%;
+    padding: 25px;
+}
+
+.contenedorMenus article .platillo {
+    padding-bottom: 20px;
+    border-bottom: 5px dotted #000;
+    margin-bottom: 40px;
+}
+
+.contenedorMenus article .platillo:last-child{
+    border-bottom: none;
+}
+
+.contenedorMenus article .categoria {
+    font-size: 1.9rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 30px;
+    text-decoration: underline;
+}
+
+.contenedorMenus article .titulo {
+    float: left;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.contenedorMenus article .precio {
+    float: right;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
+.contenedorMenus article .descripcion {
+    font-size: 1.4rem;
+    line-height: 1.5;
+    clear: both;
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.596);
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0 0 100px rgba(0, 0, 0, .5);
+    /* margin-bottom: 100px; */
+    /* position: relative; */
+    z-index: 5;
+}
+
+.galeria .foto {
+    width: 25%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+
+}
+
+.galeria .foto:hover {
+    display: relative;
+    z-index: 2;
+}
+
+.galeria .foto img {
+    width: 100%;
+    vertical-align: top;
+    opacity: .75;
+}
+
+.galeria .foto:hover img {
+    opacity: 1;
+    transition: all .3s ease;
+}
+
+.ubicacion {
+    box-shadow: 0 0 100px rgba(0, 0, 0, .5);
+    background: #fff;
+    padding: 50px 0 50px 0;
+}
+
+.ubicacion .titulo {
+    text-decoration: underline;
+}
+
+
+.ubicacion .contenedorBloques {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.ubicacion .contenedorBloques .horario,
+.ubicacion .contenedorBloques .direccion { 
+    width: 50%;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+
+.direccion .calle {
+    margin-bottom: 15px;
+}
+
+
+
+.horario .entreSemana, 
+.horario .finSemana {
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+
+.horario .titulo {
+    text-decoration: none;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.mapa {
+    width: 100%;
+    overflow: hidden;
+}
+
+.mapa iframe {
+    width: 100%;
+    max-height: 600px;
+    vertical-align: top;
+}
+
+footer {
+    background: #000;
+}
+
+footer p {
+    text-align: center;
+    padding: 35px 0;
+    color: #fff;
+}
+
+@media screen and (max-width:800px) {
+
+    header .contenedor {
+		position: static;
+        height: auto;
+        overflow: hidden;
+    }
+
+    header nav{
+        text-align: center;
+    }
+    
+    header nav a{
+        font-size: 1.3rem;
+    }
+
+	header .texto {
+		position: static;
+        margin: 100px 0;
+    }
+
+    header .texto .titulo {
+        font-size: 2.8rem ;
+    }
+
+    header .texto .descripcion {
+        font-size: 1.4rem;
+    }
+    
+    .acercaDe .contenedor{
+        height: 70px;
+        
+    }
+
+    .acercaDe .fotoLugar {
+        position: relative;
+        width: 100%;
+        margin: auto;
+        overflow: hidden;
+    }
+
+    .acercaDe article {
+    width: 100%;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    top: -50px;
+    margin: auto;
+    z-index: 0;
+    /* transform: translate(0px, 0); */
+    overflow: hidden;
+    }
+
+    .platillos .cont {
+        margin-top: -50px;
+    }
+
+    .platillos article {
+        width: 100%;
+    }
+
+    .galeria .foto {
+        width: 50%;
+    }
+
+    .ubicacion .contenedorBloques .horario,
+    .ubicacion .contenedorBloques .direccion {
+        width: 100%;
+        text-align: center;
+    }
+
+    .ubicacion .contenedorBloques .horario {
+        margin-top: 25px;
+    }
+
+}
+
+@media screen and (max-width:450px) {
+    .galeria .foto {
+        width: 100%;
+    }
+}

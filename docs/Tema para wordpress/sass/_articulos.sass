@@ -1,0 +1,107 @@
+.contenidoPrincipal
+
+    .row
+        margin-left: 0
+        
+
+    .contenedorTitulo
+        padding: 0
+
+    .contenedorPublicaciones
+        padding-left: 0
+        width: 100%
+
+        .publicacion
+            background: $colorSecundario
+            border-radius: 10px
+            margin-top: 2rem
+            
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3)
+            .imagen
+                img
+                    width: 100%
+                    border-radius: 5px 5px 0 0
+                    vertical-align: top
+        .info
+            padding: 0 1.2rem
+            .titulo
+                color: $colorTercero
+                font-family: $fuenteSecundaria
+                padding: 1.4rem 0
+                font-size: 1.40rem
+                &:hover
+                    color: $colorPrimario
+            .fecha
+                color: $rgbaTexto
+
+            .extracto
+                font-weight: 300
+                line-height: 1.65
+                margin: 1rem 0
+                font-size: 1rem
+                color: $colorTercero
+                height: 8rem
+                max-height: 8rem
+                overflow: hidden
+                &:hover
+                    overflow: auto
+        .categorias
+            a
+                // background: $colorPrimario
+                // color: $colorSecundario
+                color: $rgbaTexto
+                display: inline-block
+                // padding: 1rem
+                // border-radius: 50px
+                margin:  0 0 1.5rem .5rem
+                cursor: pointer
+                font-size: .8rem
+                // border: 2px solid transparent 
+                font-weight: bold
+
+                &:hover
+                    color: $colorQuinto
+                    // border: 2px solid #000
+                //     color: $colorTercero    
+    .siglePage
+        .publicacion
+            margin-top: 0
+            overflow: hidden
+            .info
+                .titulo
+                    font-size: 1.6rem
+                    color: $rgbaTexto2
+                    &:hover
+                        color: $rgbaTexto2
+
+                .textos
+                    padding-bottom: .5rem
+                    .parrafo
+                        color: $rgbaTexto
+                        line-height: 2
+                        margin: .8rem 0
+                        font-size: 1.05rem
+                        font-weight: 300
+                        .resaltado
+                            color: $rgbaTexto2
+                            font-weight: bold
+
+    .paginacion
+        margin: 1rem 0
+        padding: 0
+        a, p
+            color: $colorSecundario
+            display: inline-block
+            padding: .825rem 1.5rem
+            background: $colorPrimario
+            border-radius: .2rem
+            // opacity: .9
+        a
+            cursor: pointer
+            &:hover
+                // opacity: 1
+                filter: brightness(.8)
+
+        .indicador
+            background: $colorSecundario
+            color: $colorTercero

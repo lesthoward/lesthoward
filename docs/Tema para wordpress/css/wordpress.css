@@ -1,0 +1,339 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+*::selection {
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+}
+
+body {
+  background: #fff;
+  font-family: "Poppins";
+  font-size: 16px;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.bloqueAnuncio {
+  margin: 2rem auto 1.5rem auto;
+  text-align: center;
+  width: 100%;
+}
+.bloqueAnuncio img {
+  width: 100%;
+  vertical-align: top;
+}
+
+.tituloSeccion {
+  color: #000;
+  font-family: "Roboto Condensed";
+  font-size: 2rem;
+  font-weight: lighter;
+  padding-bottom: 1rem;
+  border-bottom: 3px solid #5fa3db;
+}
+
+header .contenedorLogoRedes {
+  background: #fff;
+}
+header .contenedorLogoRedes .container .logotipo {
+  height: 4rem;
+}
+header .contenedorLogoRedes .container .logotipo a {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  color: #000;
+  font-size: 1.2rem;
+}
+header .contenedorLogoRedes .container .logotipo a img {
+  height: 100%;
+  margin-right: 1rem;
+}
+header .contenedorLogoRedes .container .logotipo a p {
+  border-bottom: 2px solid transparent;
+  transition: all 0.1s ease;
+}
+header .contenedorLogoRedes .container .logotipo a:hover p {
+  border-bottom: 2px solid #000;
+}
+header .contenedorLogoRedes .container .row {
+  display: flex;
+  align-items: center;
+}
+header .contenedorLogoRedes .container .redesSociales {
+  text-align: center;
+}
+header .contenedorLogoRedes .container .redesSociales a {
+  display: inline-block;
+  color: #fff;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  line-height: 3rem;
+}
+header .contenedorLogoRedes .container .redesSociales a.linkedin {
+  background: #0077b5;
+}
+header .contenedorLogoRedes .container .redesSociales a.github {
+  background: #333;
+}
+header .contenedorLogoRedes .container .redesSociales a.youtube {
+  background: #ff0000;
+}
+header .contenedorLogoRedes .container .redesSociales a:hover {
+  background: #fff;
+  color: #000;
+}
+header .contenedorMenus {
+  background: #4381C1;
+}
+header .contenedorMenus a {
+  display: inline-block;
+  padding: 1rem 0.6rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+header .contenedorMenus a::after {
+  display: block;
+  content: "";
+  border-bottom: 2px solid transparent;
+  width: 0;
+  margin: auto;
+}
+header .contenedorMenus a:hover {
+  color: #fff;
+  transition: all 0.3s ease;
+}
+header .contenedorMenus a:hover::after {
+  display: block;
+  content: "";
+  border-bottom: 2px solid #fff;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.contenidoPrincipal .row {
+  margin-left: 0;
+}
+.contenidoPrincipal .contenedorTitulo {
+  padding: 0;
+}
+.contenidoPrincipal .contenedorPublicaciones {
+  padding-left: 0;
+  width: 100%;
+}
+.contenidoPrincipal .contenedorPublicaciones .publicacion {
+  background: #fff;
+  border-radius: 10px;
+  margin-top: 2rem;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+.contenidoPrincipal .contenedorPublicaciones .publicacion .imagen img {
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+  vertical-align: top;
+}
+.contenidoPrincipal .contenedorPublicaciones .info {
+  padding: 0 1.2rem;
+}
+.contenidoPrincipal .contenedorPublicaciones .info .titulo {
+  color: #000;
+  font-family: "Roboto Condensed";
+  padding: 1.4rem 0;
+  font-size: 1.4rem;
+}
+.contenidoPrincipal .contenedorPublicaciones .info .titulo:hover {
+  color: #4381C1;
+}
+.contenidoPrincipal .contenedorPublicaciones .info .fecha {
+  color: rgba(0, 0, 0, 0.5);
+}
+.contenidoPrincipal .contenedorPublicaciones .info .extracto {
+  font-weight: 300;
+  line-height: 1.65;
+  margin: 1rem 0;
+  font-size: 1rem;
+  color: #000;
+  height: 8rem;
+  max-height: 8rem;
+  overflow: hidden;
+}
+.contenidoPrincipal .contenedorPublicaciones .info .extracto:hover {
+  overflow: auto;
+}
+.contenidoPrincipal .contenedorPublicaciones .categorias a {
+  color: rgba(0, 0, 0, 0.5);
+  display: inline-block;
+  margin: 0 0 1.5rem 0.5rem;
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+.contenidoPrincipal .contenedorPublicaciones .categorias a:hover {
+  color: #000;
+}
+.contenidoPrincipal .siglePage .publicacion {
+  margin-top: 0;
+  overflow: hidden;
+}
+.contenidoPrincipal .siglePage .publicacion .info .titulo {
+  font-size: 1.6rem;
+  color: rgba(0, 0, 0, 0.7);
+}
+.contenidoPrincipal .siglePage .publicacion .info .titulo:hover {
+  color: rgba(0, 0, 0, 0.7);
+}
+.contenidoPrincipal .siglePage .publicacion .info .textos {
+  padding-bottom: 0.5rem;
+}
+.contenidoPrincipal .siglePage .publicacion .info .textos .parrafo {
+  color: rgba(0, 0, 0, 0.5);
+  line-height: 2;
+  margin: 0.8rem 0;
+  font-size: 1.05rem;
+  font-weight: 300;
+}
+.contenidoPrincipal .siglePage .publicacion .info .textos .parrafo .resaltado {
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: bold;
+}
+.contenidoPrincipal .paginacion {
+  margin: 1rem 0;
+  padding: 0;
+}
+.contenidoPrincipal .paginacion a, .contenidoPrincipal .paginacion p {
+  color: #fff;
+  display: inline-block;
+  padding: 0.825rem 1.5rem;
+  background: #4381C1;
+  border-radius: 0.2rem;
+}
+.contenidoPrincipal .paginacion a {
+  cursor: pointer;
+}
+.contenidoPrincipal .paginacion a:hover {
+  filter: brightness(0.8);
+}
+.contenidoPrincipal .paginacion .indicador {
+  background: #fff;
+  color: #000;
+}
+
+aside .lateral {
+  margin-bottom: 2rem;
+}
+aside .lateral .contenidoLateral {
+  margin-top: 2rem;
+}
+aside .lateral .redesSociales {
+  display: flex;
+}
+aside .lateral .redesSociales a {
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  padding: 2rem 0;
+}
+aside .lateral .redesSociales a.linkedin {
+  background: #0077b5;
+}
+aside .lateral .redesSociales a.github {
+  background: #333;
+}
+aside .lateral .redesSociales a.youtube {
+  background: #ff0000;
+}
+aside .lateral .redesSociales a i {
+  font-size: 1.5rem;
+  display: block;
+}
+aside .lateral .redesSociales a span {
+  font-weight: 300;
+}
+aside .lateral .redesSociales a:hover {
+  opacity: 0.7;
+}
+aside form {
+  background: #fff;
+  color: #000;
+  text-align: center;
+  padding: 1.25rem;
+  border-radius: 0.2rem;
+}
+aside form label {
+  font-size: 1.25rem;
+}
+aside form input[type=email] {
+  padding: 1.5rem;
+  width: 100%;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.3rem;
+  font-size: 0.9rem;
+  font-family: "Poppins";
+  margin: 1rem 0;
+}
+aside form input[type=email]:focus {
+  border: 2px solid #000;
+}
+aside form input[type=submit] {
+  background: #5fa3db;
+  color: #fff;
+  padding: 1.1rem;
+  border: none;
+  outline: none;
+  border-radius: 0.2rem;
+  border-radius: 50px;
+  cursor: pointer;
+}
+aside form input[type=submit]:hover {
+  background: #000;
+}
+
+.derechosReservados {
+  background: #4381C1;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2.5rem;
+}
+.derechosReservados p {
+  color: #fff;
+  font-weight: 300;
+}
+
+@media screen and (max-width: 768px) {
+  header .contenedorLogoRedes {
+    overflow: hidden;
+  }
+  header .contenedorLogoRedes .container .row {
+    margin: 0.8rem 0;
+  }
+  header .contenedorLogoRedes .container .row .logotipo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+  }
+
+  .contenidoPrincipal .contenedorPublicaciones .info .extracto {
+    height: auto;
+    max-height: 100px;
+    overflow: hidden;
+  }
+  .contenidoPrincipal .paginacion a {
+    margin-bottom: 1rem;
+  }
+  .contenidoPrincipal aside .boletin {
+    display: block !important;
+  }
+  .contenidoPrincipal .siglePage {
+    margin-bottom: 2rem;
+  }
+}
+
+/*# sourceMappingURL=wordpress.css.map */
