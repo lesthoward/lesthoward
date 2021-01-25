@@ -7,6 +7,7 @@ body {
   background: #1d1b24;
   color: rgba(255, 255, 255, 0.65);
   font-size: 16px;
+  padding-bottom: 2em;
 }
 
 .contenedor {
@@ -107,6 +108,10 @@ header .contenedorHeader .contenedorSVG {
 }
 header .contenedorHeader .contenedorSVG img {
   width: 100%;
+}
+
+main {
+  position: relative;
 }
 
 .tecnologias {
@@ -378,7 +383,7 @@ header .contenedorHeader .contenedorSVG img {
   text-align: justify;
   font-size: 1.1em;
   font-weight: 300;
-  height: 10em;
+  height: 9em;
   overflow: hidden;
 }
 .trabajos .contenedorCards .card .cardBoton {
@@ -402,10 +407,82 @@ footer {
   width: 100%;
 }
 footer .piePagina {
-  background: #000000;
+  background: rgba(255, 255, 255, 0.65);
   padding: 25px;
+  background: #000;
 }
 
+.volverInicio {
+  position: absolute;
+  bottom: -12em;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.volverInicio i {
+  position: relative;
+  font-size: 2em;
+  color: rgba(255, 255, 255, 0.65);
+  margin-bottom: 2em;
+  padding: 0.8em;
+  background: #000;
+  border-radius: 50px;
+}
+.volverInicio i:hover {
+  background: #fe5353;
+  color: #fff;
+}
+
+.redesFijas {
+  position: fixed;
+  left: -50px;
+  top: 50%;
+  transform: rotate(270deg);
+  display: flex;
+  z-index: 101;
+}
+.redesFijas a {
+  color: gray;
+  font-size: 1.5rem;
+  margin: 0em 1em;
+  position: relative;
+}
+.redesFijas a:hover {
+  color: #fe5353;
+}
+.redesFijas a::after {
+  content: "";
+  height: 2px;
+  width: 70%;
+  background: gray;
+  position: absolute;
+  top: 50%;
+  margin: 0 0.5em;
+}
+.redesFijas a:first-child::before {
+  content: "";
+  height: 2px;
+  width: 1.5em;
+  position: absolute;
+  background: gray;
+  top: 50%;
+  left: -2.5em;
+}
+.redesFijas a:last-child::after {
+  content: "";
+  height: 2px;
+  width: 1.5em;
+  position: absolute;
+  background: gray;
+  top: 50%;
+  right: -2.5em;
+}
+
+@media screen and (max-width: 1200px) {
+  .redesFijas {
+    display: none;
+  }
+}
 @media screen and (max-width: 1050px) {
   body {
     font-size: 14px;

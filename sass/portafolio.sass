@@ -12,7 +12,7 @@ body
     background: $colorFondo
     color: rgba(255, 255, 255, .65)
     font-size: 16px
-
+    padding-bottom: 2em
 .contenedor
     max-width: 90%
     width: 1000px
@@ -97,7 +97,7 @@ header
                 width: 100%
 
 main
-    // overflow: hidden
+    position: relative
 .tecnologias
     padding-bottom: 5em
     box-shadow:  0 5 10px #000
@@ -330,7 +330,7 @@ main
                 text-align: justify
                 font-size: 1.1em
                 font-weight: 300
-                height: 10em
+                height: 9em
                 overflow: hidden
             .cardBoton
                 display: block
@@ -348,9 +348,74 @@ main
 footer
     margin: 5.45em auto
     width: 100%
+
     .piePagina
-        background: #000000
+        background: $colorTexto
         padding: 25px
+        background: #000
+
+.volverInicio
+    position: absolute
+    bottom: -12em
+    width: 100%
+    display: flex
+    justify-content: center
+    i
+        position: relative
+        font-size: 2em
+        color: $colorTexto
+        margin-bottom: 2em
+        padding: .8em
+        background: #000
+        border-radius: 50px
+        &:hover
+            background: $colorSecundario
+            color: #fff
+
+.redesFijas
+    position: fixed
+    left: -50px
+    top: 50%
+    transform: rotate(270deg)
+    display: flex
+    z-index: 101
+    a
+        color: gray
+        font-size: 1.5rem
+        margin: 0em 1em
+        position: relative
+        &:hover
+            color: $colorSecundario
+        &::after
+            content: ''
+            height: 2px
+            width: 70%
+            background: gray
+            position: absolute
+            top: 50%
+            margin: 0 .5em
+        &:first-child
+            &::before
+                content: ''
+                height: 2px
+                width: 1.5em
+                position: absolute
+                background: gray
+                top: 50%
+                left: -2.5em
+        &:last-child
+            &::after
+                content: ''
+                height: 2px
+                width: 1.5em
+                position: absolute
+                background: gray
+                top: 50%
+                right: -2.5em
+
+@media screen and (max-width: 1200px)
+    .redesFijas
+        display: none
 
 @media screen and (max-width: 1050px)
     body
@@ -422,22 +487,22 @@ footer
             margin-top: 5em
         nav
             flex-direction: column
-            .logo 
-                margin-bottom: 1.4em 
-            ul 
-                li 
+            .logo
+                margin-bottom: 1.4em
+            ul
+                li
                     a
                         font-size: 1.4em
-    .tecnologias 
-        .contenedor 
-            .habilidades 
+    .tecnologias
+        .contenedor
+            .habilidades
                 div
                     min-width: 60px
-    .trabajos 
-        .contenedorCards 
-            .card 
+    .trabajos
+        .contenedorCards
+            .card
                 width: 90%
-                .cardImagen 
+                .cardImagen
                     img
                         height: 200px
                 .descripcion
