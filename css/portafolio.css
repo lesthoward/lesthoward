@@ -354,7 +354,6 @@ main {
   position: absolute;
   z-index: 5;
   bottom: -1px;
-  display: none;
 }
 .trabajos .contenedorCards .card .cardImagen .wave svg {
   width: 100%;
