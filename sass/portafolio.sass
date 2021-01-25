@@ -196,7 +196,7 @@ main
             background: $colorPrimario
             margin-top: .3em
     .descripcion
-        font-size: 1.2em
+        font-size: 1.3em
         line-height: 1.75
         span
             color: $colorSecundario
@@ -270,8 +270,9 @@ main
     .contenedorCards
         display: flex
         justify-content: space-around
+        flex-flow: row wrap
         .card
-            width: 45%
+            width: 32%
             position: relative
             background: #22202c
             border-radius: .8em
@@ -282,13 +283,13 @@ main
                 position: relative
                 z-index: 3
                 overflow: hidden
-                border-radius: .8em .8em 0 0
+                border-radius: .5em .5em 0 0
                 img
                     width: 100%
-                    height: 280px
+                    height: 230px
                     object-fit: cover
                     object-position: 0 0%
-                    border-radius: .8em .8em 0 0
+                    border-radius: .5em .5em 0 0
                     filter: brightness(70%)
                     transition: transform .3s ease
                     &:hover
@@ -302,6 +303,7 @@ main
                     position: absolute
                     z-index: 5
                     bottom: -1px
+                    display: none
 
                     svg
                         width: 100%
@@ -311,19 +313,26 @@ main
                 width: 87%
                 margin: auto
                 z-index: 1
-
+                display: flex
+                flex-flow: column wrap
+                align-content: center
             .nombre
-                font-size: 1.4em
+                font-size: 1.3em
                 margin: 1em
                 font-weight: bold
+                height: 1.3em
+                display: flex
+                justify-content: center
+                align-items: center
             .descripcion
                 line-height: 1.75
                 text-align: justify
                 font-size: 1.1em
                 font-weight: 300
-                height: 130px
+                height: 10em
+                overflow: hidden
             .cardBoton
-                display: inline-block
+                display: block
                 padding: 1em 1.3em
                 border: 1px solid #000
                 background: $colorTexto
@@ -355,6 +364,16 @@ footer
                 div
                     min-width: 70px
                     width: 14%
+    .trabajos
+        .contenedorCards
+            width: 75%
+            flex-flow: column wrap
+            margin: auto
+            .card
+                width: 80%
+                margin: auto auto 2rem auto
+                .descripcion
+                    height: 5em
 @media screen and (max-width: 750px)
     header
         .contenedorHeader
